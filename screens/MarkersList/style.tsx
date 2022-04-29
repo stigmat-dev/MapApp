@@ -6,6 +6,11 @@ const styles = StyleSheet.create({
     paddingTop: 100,
     backgroundColor: 'azure',
     alignItems: 'center',
+    justifyContent: 'center',
+  },
+  flatList: {
+    width: '100%',
+    marginLeft: 75,
   },
   bigTitle: {
     maxHeight: 50,

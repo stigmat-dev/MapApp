@@ -4,7 +4,8 @@ import {
   View, 
   Text, 
   Pressable, 
-  TouchableOpacity } from "react-native";
+  TouchableOpacity, 
+  FlatList} from "react-native";
 import styles from "./style";
 
 interface IMarkers {
@@ -47,25 +48,24 @@ const MarkersList: VFC<IMarkersListProps> = ({
       {modalVisible && markerDetails()}
       {editModalVisible && editModal()}
       {deleteModalVisible && deleteModal()}
-      {markers && markers?.length > 0 && markers?.map((element) => (
+      <FlatList
+        style={styles.flatList}
+        data={markers}
+        renderItem={({item}) => 
         <TouchableOpacity 
           style={styles.card} 
-          onPress={() => openModal(element.id)}
+          onPress={() => openModal(item.id)}
         >
-          <View key={element.id}>
+          <View key={item.id}>
               <View>
                 <Text style={styles.title}>
-                  {element.title}
+                  {item.title}
                 </Text>
               </View>
           </View>
           </TouchableOpacity>
-      )) }
-      { !markers && (
-        <Text>
-          You don`t have markers yet...
-        </Text>
-      ) }
+        }
+      />
     </View>
   );
 };
