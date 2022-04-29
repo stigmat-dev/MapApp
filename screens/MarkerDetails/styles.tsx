@@ -1,0 +1,155 @@
+import { StyleSheet } from 'react-native';
+
+ const styles = StyleSheet.create({
+  centeredView: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 250,
+  },
+  modalView: {
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'azure',
+    paddingBottom: 40,
+    paddingLeft: 40,
+    paddingRight: 40,
+    alignItems: 'center',
+  },
+  mainView: {
+    alignItems: 'center',
+  },
+  bigTitle: {
+    maxHeight: 50,
+    fontSize: 18,
+    marginBottom: 20,
+  },
+  myTitle: {
+    fontSize: 22,
+    color: '#3F7AFF',
+    fontWeight: 'bold',
+  },
+  buttonBack: {
+    position: 'absolute',
+    left: 40,
+    marginTop: 20,
+  },
+  modalTextDescr: {
+    marginBottom: 10,
+    fontSize: 15,
+    width: 160,
+    textAlign: 'center',
+  },
+  modalTextCoord: {
+    marginBottom: 10,
+    fontSize: 10,
+    width: 160,
+    textAlign: 'center',
+  },
+  map: {
+    marginTop: 20,
+    width: 300,
+    height: 300,
+  },
+  container: {
+    flex: 1,
+    paddingTop: 100,
+    backgroundColor: 'azure',
+    alignItems: 'center',
+  },
+  menu: {
+    position: 'absolute',
+    left: 'auto',
+    right: 38,
+    top: 55,
+  },
+  card: {
+    borderRadius: 6,
+    borderWidth: 1,
+    width: '80%',
+    marginBottom: 15,
+    minHeight: 70,
+    padding: 15,
+    backgroundColor: '#3F7AFF',
+  },
+  button: {
+    borderRadius: 6,
+    borderWidth: 1,
+    backgroundColor: 'red',
+  },
+  title: {
+    maxHeight: 50,
+    fontSize: 16,
+    fontWeight: 'bold',
+    backgroundColor: '#3F7AFF',
+    color: 'white',
+  },
+  description: {
+    fontSize: 12,
+    fontWeight: 'bold',
+    backgroundColor: '#3F7AFF',
+    color: 'white',
+  },
+  modalText: {
+    marginBottom: 10,
+    fontSize: 18,
+    width: 160,
+    textAlign: 'center',
+  },
+  buttonDelete: {
+    borderRadius: 5,
+    width: 50,
+    padding: 10,
+    marginTop: 50,
+    elevation: 2,
+    backgroundColor: '#9C210E',
+  },
+  textStyle: {
+    color: 'white',
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  buttonEdit: {
+    position: 'absolute',
+    left: 'auto',
+    right: 40,
+    marginTop: 20,
+  },
+  // input: {
+  //   height: 40,
+  //   width: 200,
+  //   borderRadius: 5,
+  //   margin: 10,
+  //   borderWidth: 1,
+  //   padding: 10,
+  //   backgroundColor: 'white',
+  // },
+  // buttonCancel: {
+  //   borderRadius: 5,
+  //   width: 100,
+  //   padding: 10,
+  //   marginTop: 20,
+  //   elevation: 2,
+  //   backgroundColor: '#19747C',
+  //   opacity: 0.5,
+  // },
+
+  // buttonDeleteAll: {
+  //   borderRadius: 5,
+  //   width: 100,
+  //   padding: 10,
+  //   marginTop: 20,
+  //   elevation: 2,
+  //   backgroundColor: '#9C210E',
+  // },
+  // buttonOk: {
+  //   borderRadius: 5,
+  //   width: 100,
+  //   padding: 10,
+  //   marginTop: 20,
+  //   elevation: 2,
+  //   backgroundColor: '#0C2C87',
+  // },
+});
+
+export default styles;
